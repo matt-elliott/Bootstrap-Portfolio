@@ -147,3 +147,50 @@ footer h6 {
     }
 }
 /**** GLOBAL RESPONSIVE STYLES [END] ****/
+/**** TRANSITION STYLES [START] ****/
+#site-header #site-nav #site-links .navbar-nav li a:hover,
+#site-header #site-nav .logo:hover,
+#site-header #site-nav .logo:hover h1,
+#main-content #about-me .content-body img:hover,
+#main-content #contact .content-body input:focus,
+#main-content #contact .content-body textarea:focus,
+#main-content #contact .content-body #submit:active,
+#main-content #portfolio .content-body .links-grid .grid-item a:hover .grid-description {
+    -webkit-transition: all 350ms ease-out 0s;
+    transition: all 350ms ease-out 0s;
+}
+
+#site-header #site-nav #site-links .navbar-nav li a:hover {
+    color: #fff;
+    background: #4aaaa5;
+}
+
+#site-header #site-nav .logo:hover {
+    background: #333;
+}
+
+#site-header #site-nav .logo:hover h1 {
+    color: #4aaaa5;
+}
+
+#main-content #about-me .content-body img:hover {
+    -webkit-filter: blur(5px) grayscale(45%);
+    filter: blur(5px) grayscale(45%);
+}
+
+#main-content #portfolio .content-body .links-grid .grid-item a:hover .grid-description {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#main-content #contact .content-body textarea:focus,
+#main-content #contact .content-body input:focus {
+    border: 4px solid #ff0000;
+}
+
+#main-content #contact .content-body #submit:active {
+    color: #4aaaa5;
+    background: #777777;
+}
+/**** TRANSITION STYLES [END] ****/
