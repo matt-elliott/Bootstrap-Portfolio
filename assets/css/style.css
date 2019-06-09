@@ -51,6 +51,8 @@ body {
 /**** GLOBAL STYLES [START] ****/
 #main-content {
     min-height: 69vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 #main-content .content-header {
     border-bottom: 2px solid #ccc;
@@ -63,6 +65,11 @@ body {
     color: #4aaaa5;
     padding: 15px 0 0;
 }
+#main-content .content-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 footer {
     box-sizing: content-box;
     background-color: #666666;
@@ -72,6 +79,62 @@ footer h6 {
     color: #dddddd;   
 }
 /**** GLOBAL STYLES [END] ****/
+/**** PORTFOLIO STYLES [START] ****/
+#main-content #portfolio .content-body .links-grid .grid-item {
+    position: relative;
+    display: inline-flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+#main-content #portfolio .content-body .links-grid .grid-item a {
+    display: contents;
+}
+#main-content #portfolio .content-body .links-grid .grid-item img {
+    min-width: 100%;
+    height: auto;
+}
+#main-content #portfolio .content-body .links-grid .grid-item .grid-description {
+    background: #4aaaa5;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+}
+/**** PORTFOLIO STYLES [END] ****/
+/**** CONTACT STYLES [START] ****/
+#main-content #contact .content-body ul li {
+    margin: 15px 0;
+    
+}
+#main-content #contact .content-body label,
+#main-content #contact .content-body input {
+    display: block;
+}
+
+#main-content #contact .content-body input,
+#main-content #contact .content-body textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #dddddd;
+    box-sizing: border-box;
+}
+
+#main-content #contact .content-body #submit {
+    background: #4aaaa5;
+    width: auto;
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: capitalize;
+}
+/**** CONTACT STYLES [END] ****/
 /**** GLOBAL RESPONSIVE STYLES [START] ****/
 @media screen and (min-width: 420px) {
     #main-content #about-me .content-body figure {
