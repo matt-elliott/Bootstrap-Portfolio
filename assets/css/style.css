@@ -17,12 +17,17 @@ body {
 #site-header #site-nav .logo {
     background: #4aaaa5;
     float: left;
-    padding: 22px 30px;
+}
+#site-header #site-nav .logo h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 #site-header #site-nav .logo h1 a {
     display: block;
     color: #fff;
     font-size: inherit;
+    padding: 30px 30px;
 }
 #site-header #site-nav #site-links {
     flex-direction: row-reverse;
@@ -31,6 +36,11 @@ body {
 }
 #site-header #site-nav .navbar-toggler {
     background-color: #4aaaa5!important;
+    position: absolute;       
+    top: 35px;
+    left: 15px;
+    border: 1px dotted #ccc;
+    box-shadow: 0 0 3px 0px #444;
 }
 #site-header #site-nav #site-links .navbar-nav li {
     float: left;
@@ -180,12 +190,17 @@ footer h6 {
         float: left;
     }
 }
+@media screen and (max-width: 420px) {
+    #site-header #site-nav .logo h1 {
+        max-width: 165px; /*clips logo to say matt e */
+        overflow: hidden;
+        margin: 0 auto;
+    }
+}
 @media screen and (min-width: 768px) {
     #main-content #about-me .content-body p {
         margin-right: 3rem;
     }
-}
-@media screen and (min-width: 768px) {
     #main-content #portfolio .content-body .links-grid .grid-item .grid-description {
         -webkit-transform: translateY(100px);
         transform: translateY(100px);
@@ -194,6 +209,12 @@ footer h6 {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
         transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+}
+@media screen and (max-width: 992px) {
+    #site-header #site-nav .logo {
+        width: 100%;
+        text-align: center;
     }
 }
 /**** GLOBAL RESPONSIVE STYLES [END] ****/
