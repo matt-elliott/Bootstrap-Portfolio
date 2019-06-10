@@ -44,7 +44,8 @@ body {
 }
 #site-header #site-nav #site-links .navbar-nav li {
     float: left;
-    border-right: 2px solid #dddddd;
+    border-right: 2px solid;
+    border-color: #dddddd;
 }
 #site-header #site-nav #site-links .navbar-nav li:last-of-type {
     border-right: none;
@@ -217,6 +218,21 @@ footer h6 {
     #site-header #site-nav .logo {
         width: 100%;
         text-align: center;
+    }
+    #site-header #site-nav #site-links {
+        border: 1px solid #ccc;
+    }
+    #site-header #site-nav #site-links .navbar-nav li {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+    #site-header #site-nav #site-links .navbar-nav li:last-of-type {
+        border-bottom: none;
+    }
+    #site-header #site-nav #site-links .navbar-nav li a {
+        padding-top: 20px;
+        padding-bottom;
+        border-color:  20px;
     }
 }
 /**** GLOBAL RESPONSIVE STYLES [END] ****/
