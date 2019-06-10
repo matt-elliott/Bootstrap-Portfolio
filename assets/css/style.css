@@ -65,16 +65,13 @@ body {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
-#main-content .content-header {
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
-    margin-bottom: 25px;
-}
 #main-content .content-header h2 {
     font-family: 'Georgia', 'Times', 'Times New Roman', serif;
     font-weight: bold;
     color: #4aaaa5;
-    padding: 15px 0 0;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ccc;
 }
 #main-content .content-body ul {
     list-style: none;
@@ -90,6 +87,11 @@ footer h6 {
     color: #dddddd;   
 }
 /**** GLOBAL STYLES [END] ****/
+/**** BIO STYLES [START] ****/
+#main-content #about-me .content-body {
+    padding-top: 10px;
+}
+/**** BIO STYLES [END] ****/
 /**** PORTFOLIO STYLES [START] ****/
 #main-content #portfolio .content-body .links-grid .grid-item {
     position: relative;
@@ -119,15 +121,13 @@ footer h6 {
 }
 /**** PORTFOLIO STYLES [END] ****/
 /**** CONTACT STYLES [START] ****/
-#main-content #contact .content-body ul li {
-    margin: 15px 0;
-    
-}
 #main-content #contact .content-body label,
 #main-content #contact .content-body input {
     display: block;
 }
-
+#main-content #contact .content-body label {
+    margin-top: 20px;
+}
 #main-content #contact .content-body input,
 #main-content #contact .content-body textarea {
     width: 100%;
@@ -136,11 +136,11 @@ footer h6 {
     border: 2px solid #dddddd;
     box-sizing: border-box;
 }
-
 #main-content #contact .content-body #submit {
     background: #4aaaa5;
     width: auto;
     padding: 10px 20px;
+    margin: 15px 0;
     color: #fff;
     text-transform: capitalize;
 }
@@ -198,6 +198,9 @@ footer h6 {
         max-width: 165px; /*clips logo to say matt e */
         overflow: hidden;
         margin: 0 auto;
+    }
+    #main-content #contact .content-body #submit {
+        width: 100%;
     }
 }
 @media screen and (min-width: 768px) {
