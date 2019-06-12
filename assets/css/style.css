@@ -93,6 +93,9 @@ footer h6 {
 }
 /**** BIO STYLES [END] ****/
 /**** PORTFOLIO STYLES [START] ****/
+#main-content #portfolio .content-body {
+    margin: 0 -15px;
+}
 #main-content #portfolio .content-body .links-grid .grid-item {
     position: relative;
     display: inline-flex;
@@ -217,7 +220,7 @@ footer h6 {
         transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
     #site-header #site-nav .logo {
         width: 100%;
         text-align: center;

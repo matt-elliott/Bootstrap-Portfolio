@@ -16,7 +16,7 @@
 
 <body>
     <header id="site-header" class="bg-white">
-        <nav class="navbar navbar-expand-lg navbar-dark container p-0" id="site-nav">
+        <nav class="navbar navbar-expand-md navbar-dark container p-0" id="site-nav">
             <div class="logo float-left">
                 <h1>
                     <a href="#" class="navbar-brand">Matt Elliott</a>
@@ -38,32 +38,34 @@
     </header>
 
     <div class="container" id="main-content">
-        <section class="row bg-white" id="contact">
-            <header class="col-sm-12 content-header">
-                <h2>
-                    Contact
-                </h2>
-            </header>
-            <div class="content-body col-sm-12">
-                <form action="send">
-                    <ul>
-                        <li>
-                            <label for="name">First Name</label>
-                            <input id="name" name="name" type="text" placeholder="John Smythe" required>
-                        </li>
-                        <li>
-                            <label for="email">Email</label>
-                            <input id="email" name="email" type="email" placeholder="jsmythe@googmail.com" required>
-                        </li>
-                        <li>
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                        </li>
-                        <li>
-                            <input type="submit" name="submit" id="submit" value="submit">
-                        </li>
-                    </ul>
-                </form>
+        <section class="row" id="contact">
+            <div class="content col-sm-12 col-md-12 col-lg-8 bg-white">
+                <header class="content-header">
+                    <h2>
+                        Contact
+                    </h2>
+                </header>
+                <div class="content-body">
+                    <form action="send">
+                        <ul>
+                            <li>
+                                <label for="name">First Name</label>
+                                <input id="name" name="name" type="text" placeholder="John Smythe" required>
+                            </li>
+                            <li>
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" placeholder="jsmythe@googmail.com" required>
+                            </li>
+                            <li>
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            </li>
+                            <li>
+                                <input type="submit" name="submit" id="submit" value="submit">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
             </div>
         </section>
     </div>
